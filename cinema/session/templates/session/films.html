@@ -1,0 +1,16 @@
+{% extends 'session/base.html'%}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+<ul>
+{% for f in films %}
+    <li>
+        <h2>{{f.title}}</h2>
+        <p>{{f.genre}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
